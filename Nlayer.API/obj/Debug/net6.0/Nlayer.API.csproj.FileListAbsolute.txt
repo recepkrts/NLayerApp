@@ -184,3 +184,5 @@ C:\Users\Recep\source\repos\NLayerApp\Nlayer.API\obj\Debug\net6.0\refint\Nlayer.
 C:\Users\Recep\source\repos\NLayerApp\Nlayer.API\obj\Debug\net6.0\Nlayer.API.pdb
 C:\Users\Recep\source\repos\NLayerApp\Nlayer.API\obj\Debug\net6.0\Nlayer.API.genruntimeconfig.cache
 C:\Users\Recep\source\repos\NLayerApp\Nlayer.API\obj\Debug\net6.0\ref\Nlayer.API.dll
+C:\Users\Recep\source\repos\NLayerApp\Nlayer.API\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\Recep\source\repos\NLayerApp\Nlayer.API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
