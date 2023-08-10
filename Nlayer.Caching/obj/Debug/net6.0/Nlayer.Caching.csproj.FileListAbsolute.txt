@@ -1,0 +1,11 @@
+C:\Users\Recep\source\repos\recepkrts\NetCoreNLayer\NLayerApp\Nlayer.Caching\bin\Debug\net6.0\Nlayer.Caching.deps.json
+C:\Users\Recep\source\repos\recepkrts\NetCoreNLayer\NLayerApp\Nlayer.Caching\bin\Debug\net6.0\Nlayer.Caching.dll
+C:\Users\Recep\source\repos\recepkrts\NetCoreNLayer\NLayerApp\Nlayer.Caching\bin\Debug\net6.0\Nlayer.Caching.pdb
+C:\Users\Recep\source\repos\recepkrts\NetCoreNLayer\NLayerApp\Nlayer.Caching\obj\Debug\net6.0\Nlayer.Caching.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Recep\source\repos\recepkrts\NetCoreNLayer\NLayerApp\Nlayer.Caching\obj\Debug\net6.0\Nlayer.Caching.AssemblyInfoInputs.cache
+C:\Users\Recep\source\repos\recepkrts\NetCoreNLayer\NLayerApp\Nlayer.Caching\obj\Debug\net6.0\Nlayer.Caching.AssemblyInfo.cs
+C:\Users\Recep\source\repos\recepkrts\NetCoreNLayer\NLayerApp\Nlayer.Caching\obj\Debug\net6.0\Nlayer.Caching.csproj.CoreCompileInputs.cache
+C:\Users\Recep\source\repos\recepkrts\NetCoreNLayer\NLayerApp\Nlayer.Caching\obj\Debug\net6.0\Nlayer.Caching.dll
+C:\Users\Recep\source\repos\recepkrts\NetCoreNLayer\NLayerApp\Nlayer.Caching\obj\Debug\net6.0\refint\Nlayer.Caching.dll
+C:\Users\Recep\source\repos\recepkrts\NetCoreNLayer\NLayerApp\Nlayer.Caching\obj\Debug\net6.0\Nlayer.Caching.pdb
+C:\Users\Recep\source\repos\recepkrts\NetCoreNLayer\NLayerApp\Nlayer.Caching\obj\Debug\net6.0\ref\Nlayer.Caching.dll
