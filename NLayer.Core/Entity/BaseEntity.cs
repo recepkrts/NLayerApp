@@ -15,7 +15,7 @@ namespace NLayer.Core.Entity
         public DateTime? CreatedOn { get; set; }
         public bool IsDeleted { get; set; }
         public bool IsActive { get; set; }
-        public string Status { get; set; }
+        public string? Status { get; set; }
 
     }
 }
