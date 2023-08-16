@@ -186,3 +186,6 @@ C:\Users\Recep\source\repos\NLayerApp\Nlayer.API\obj\Debug\net6.0\Nlayer.API.gen
 C:\Users\Recep\source\repos\NLayerApp\Nlayer.API\obj\Debug\net6.0\ref\Nlayer.API.dll
 C:\Users\Recep\source\repos\NLayerApp\Nlayer.API\bin\Debug\net6.0\AutoMapper.dll
 C:\Users\Recep\source\repos\NLayerApp\Nlayer.API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Recep\source\repos\NLayerApp\Nlayer.API\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\Recep\source\repos\NLayerApp\Nlayer.API\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+C:\Users\Recep\source\repos\NLayerApp\Nlayer.API\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll

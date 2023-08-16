@@ -170,3 +170,7 @@ C:\Users\Recep\source\repos\NLayerApp\Nlayer.Web\obj\Debug\net6.0\Nlayer.Web.gen
 C:\Users\Recep\source\repos\NLayerApp\Nlayer.Web\obj\Debug\net6.0\ref\Nlayer.Web.dll
 C:\Users\Recep\source\repos\NLayerApp\Nlayer.Web\bin\Debug\net6.0\AutoMapper.dll
 C:\Users\Recep\source\repos\NLayerApp\Nlayer.Web\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Recep\source\repos\NLayerApp\Nlayer.Web\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\Recep\source\repos\NLayerApp\Nlayer.Web\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+C:\Users\Recep\source\repos\NLayerApp\Nlayer.Web\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\Recep\source\repos\NLayerApp\Nlayer.Web\obj\Debug\net6.0\Nlayer.Web.MvcApplicationPartsAssemblyInfo.cs
