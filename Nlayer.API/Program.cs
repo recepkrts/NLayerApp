@@ -2,6 +2,7 @@ using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Nlayer.API.Filters;
+using Nlayer.API.Middlewares;
 using Nlayer.Repository;
 using Nlayer.Repository.Repositories;
 using Nlayer.Repository.UnitOfWorks;
@@ -63,6 +64,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCustomException();
 
 app.UseAuthorization();
 
