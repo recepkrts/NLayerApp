@@ -20,3 +20,11 @@ C:\Users\Recep\source\repos\NLayerApp\Nlayer.Caching\obj\Debug\net6.0\Nlayer.Cac
 C:\Users\Recep\source\repos\NLayerApp\Nlayer.Caching\obj\Debug\net6.0\refint\Nlayer.Caching.dll
 C:\Users\Recep\source\repos\NLayerApp\Nlayer.Caching\obj\Debug\net6.0\Nlayer.Caching.pdb
 C:\Users\Recep\source\repos\NLayerApp\Nlayer.Caching\obj\Debug\net6.0\ref\Nlayer.Caching.dll
+C:\Users\Recep\source\repos\NLayerApp\Nlayer.Caching\bin\Debug\net6.0\NLayer.Core.dll
+C:\Users\Recep\source\repos\NLayerApp\Nlayer.Caching\bin\Debug\net6.0\Nlayer.Repository.dll
+C:\Users\Recep\source\repos\NLayerApp\Nlayer.Caching\bin\Debug\net6.0\Nlayer.Service.dll
+C:\Users\Recep\source\repos\NLayerApp\Nlayer.Caching\bin\Debug\net6.0\Nlayer.Service.pdb
+C:\Users\Recep\source\repos\NLayerApp\Nlayer.Caching\bin\Debug\net6.0\NLayer.Core.pdb
+C:\Users\Recep\source\repos\NLayerApp\Nlayer.Caching\bin\Debug\net6.0\Nlayer.Repository.pdb
+C:\Users\Recep\source\repos\NLayerApp\Nlayer.Caching\obj\Debug\net6.0\Nlayer.Caching.csproj.AssemblyReference.cache
+C:\Users\Recep\source\repos\NLayerApp\Nlayer.Caching\obj\Debug\net6.0\Nlayer.Caching.csproj.CopyComplete

@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using Nlayer.Caching;
 using Nlayer.Repository;
 using Nlayer.Repository.Repositories;
 using Nlayer.Repository.UnitOfWorks;
@@ -30,6 +31,8 @@ namespace Nlayer.API.Modules
             builder.RegisterAssemblyTypes(apiAssembly, repoAssembly, serviceAssembly).Where(x=>x.Name.EndsWith("Repository")).AsImplementedInterfaces().InstancePerLifetimeScope().InstancePerLifetimeScope();
             
             builder.RegisterAssemblyTypes(apiAssembly, repoAssembly, serviceAssembly).Where(x=>x.Name.EndsWith("Service")).AsImplementedInterfaces().InstancePerLifetimeScope().InstancePerLifetimeScope();
+
+            builder.RegisterType<ProductServiceWithCaching>().As<IProductService>();
 
 
         }
