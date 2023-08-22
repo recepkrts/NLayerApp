@@ -26,9 +26,9 @@ namespace Nlayer.Caching
             _memoryCache = memoryCache;
             _mapper = mapper;
 
-            if (!_memoryCache.TryGetValue(CacheProductKey,out _))
+            if (!_memoryCache.TryGetValue(CacheProductKey, out _))
             {
-                _memoryCache.Set(CacheProductKey,_repository.GetProductsWithCategoryAsync().Result);
+                _memoryCache.Set(CacheProductKey, _repository.GetProductsWithCategoryAsync().Result);
             }
         }
 
@@ -64,19 +64,19 @@ namespace Nlayer.Caching
         {
             var product = _memoryCache.Get<List<Product>>(CacheProductKey).FirstOrDefault(x => x.Id == id);
 
-            if (product==null)
+            if (product == null)
             {
                 throw new NotFoundException($"{typeof(Product).Name} ({id}) not found");
             }
             return Task.FromResult(product);
         }
 
-        public Task<CustomResponseDto<List<ProductWithCategoryDto>>> GetProductsWithCategoryAsync()
+        public Task<List<ProductWithCategoryDto>> GetProductsWithCategoryAsync()
         {
             var products = _memoryCache.Get<IEnumerable<Product>>(CacheProductKey);
             var productsWithCategoryDto = _mapper.Map<List<ProductWithCategoryDto>>(products);
-            
-            return Task.FromResult(CustomResponseDto<List<ProductWithCategoryDto>>.Success(200, productsWithCategoryDto));
+
+            return Task.FromResult(productsWithCategoryDto);
         }
 
         public async Task RemoveAsync(Product entity)
@@ -107,7 +107,7 @@ namespace Nlayer.Caching
 
         public async Task CacheAllProductsAsync()
         {
-            _memoryCache.Set(CacheProductKey,await _repository.GetAll().ToListAsync());
+            _memoryCache.Set(CacheProductKey, await _repository.GetAll().ToListAsync());
         }
     }
 }

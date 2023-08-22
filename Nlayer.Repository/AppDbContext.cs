@@ -21,21 +21,67 @@ namespace Nlayer.Repository
 
             modelBuilder.Entity<ProductFeature>().HasData(new ProductFeature()
             {
-                Id=1,
-                Color="Kırmızı",
-                Height=100,
-                Width=100,
-                ProductId=1,
-            },new ProductFeature()
+                Id = 1,
+                Color = "Kırmızı",
+                Height = 100,
+                Width = 100,
+                ProductId = 1,
+            }, new ProductFeature()
             {
-                Id=2,
-                Color="Sarı",
-                Height=200,
-                Width=100,
-                ProductId=2,
+                Id = 2,
+                Color = "Sarı",
+                Height = 200,
+                Width = 100,
+                ProductId = 2,
             });
 
             base.OnModelCreating(modelBuilder);
+        }
+
+        public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
+        {
+            foreach (var item in ChangeTracker.Entries())
+            {
+                if (item.Entity is BaseEntity entityReference)
+                {
+                    switch (item.State)
+                    {
+                        case EntityState.Added:
+                            entityReference.InsertDate = DateTime.Now;
+                            break;
+                        case EntityState.Modified:
+                            Entry(entityReference).Property(x=>x.InsertDate).IsModified = false;
+                            entityReference.UpdatedDate = DateTime.Now;
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            }
+
+            return base.SaveChangesAsync(cancellationToken);
+        }
+        public override int SaveChanges()
+        {
+            foreach (var item in ChangeTracker.Entries())
+            {
+                if (item.Entity is BaseEntity entityReference)
+                {
+                    switch (item.State)
+                    {
+                        case EntityState.Added:
+                            entityReference.InsertDate = DateTime.Now;
+                            break;
+                        case EntityState.Modified:
+                            entityReference.UpdatedDate = DateTime.Now;
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            }
+
+            return base.SaveChanges();
         }
     }
 }
