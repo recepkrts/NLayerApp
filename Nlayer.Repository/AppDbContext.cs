@@ -50,7 +50,7 @@ namespace Nlayer.Repository
                             entityReference.InsertDate = DateTime.Now;
                             break;
                         case EntityState.Modified:
-                            Entry(entityReference).Property(x=>x.InsertDate).IsModified = false;
+                            Entry(entityReference).Property(x => x.InsertDate).IsModified = false;
                             entityReference.UpdatedDate = DateTime.Now;
                             break;
                         default:
