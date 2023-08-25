@@ -21,21 +21,59 @@ namespace Nlayer.Repository
 
             modelBuilder.Entity<ProductFeature>().HasData(new ProductFeature()
             {
-                Id=1,
-                Color="Kırmızı",
-                Height=100,
-                Width=100,
-                ProductId=1,
-            },new ProductFeature()
+                Id = 1,
+                Color = "Kırmızı",
+                Height = 100,
+                Width = 100,
+                ProductId = 1,
+            }, new ProductFeature()
             {
-                Id=2,
-                Color="Sarı",
-                Height=200,
-                Width=100,
-                ProductId=2,
+                Id = 2,
+                Color = "Sarı",
+                Height = 200,
+                Width = 100,
+                ProductId = 2,
             });
 
             base.OnModelCreating(modelBuilder);
+        }
+
+        public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
+        {
+            UpdateChangeTracker();
+            return base.SaveChangesAsync(cancellationToken);
+        }
+        public override int SaveChanges()
+        {
+            UpdateChangeTracker();
+            return base.SaveChanges();
+        }
+
+        public void UpdateChangeTracker()
+        {
+            foreach (var item in ChangeTracker.Entries())
+            {
+                if (item.Entity is BaseEntity entityReference)
+                {
+                    switch (item.State)
+                    {
+                        case EntityState.Added:
+                            {
+                                Entry(entityReference).Property(x => x.UpdatedDate).IsModified = false;
+                                entityReference.InsertDate = DateTime.Now;
+                                break;
+                            }
+                        case EntityState.Modified:
+                            {
+                                Entry(entityReference).Property(x => x.InsertDate).IsModified = false;
+                                entityReference.UpdatedDate = DateTime.Now;
+                                break;
+                            }
+                        default:
+                            break;
+                    }
+                }
+            }
         }
     }
 }

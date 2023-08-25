@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Nlayer.API.Filters;
 using NLayer.Core.Services;
 
 namespace Nlayer.API.Controllers
